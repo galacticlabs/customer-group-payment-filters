@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Block\Adminhtml\Group\Edit\Form">
+        <plugin name="galacticlabs_customergrouppaymentfilters_form" type="GalacticLabs\CustomerGroupPaymentFilters\Plugin\Block\Aminhtml\Group\Edit\FormPlugin" sortOrder="1"/>
+    </type>
+
+    <type name="\Magento\Customer\Api\GroupRepositoryInterface">
+        <plugin name="galacticlabs_customergrouppaymentfilters_plugin_model_grouprepository" type="\GalacticLabs\CustomerGroupPaymentFilters\Plugin\Model\GroupRepository" />
+    </type>
+
+    <preference for="\GalacticLabs\CustomerGroupPaymentFilters\Api\PaymentFilterRepositoryInterface" type="\GalacticLabs\CustomerGroupPaymentFilters\Model\PaymentFilterRepository" />
+    <preference for="\GalacticLabs\CustomerGroupPaymentFilters\Api\Data\PaymentFilterInterface" type="\GalacticLabs\CustomerGroupPaymentFilters\Model\PaymentFilter" />
+</config>

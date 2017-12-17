@@ -1,0 +1,17 @@
+{
+    "name": "galacticlabs/customer-group-payment-filters",
+    "description": "Filter available payment methods based on customer groups",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "GalacticLabs\\CustomerGroupPaymentFilters\\": ""
+        }
+    }
+}
